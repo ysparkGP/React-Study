@@ -9,7 +9,9 @@ PropComponent.defaultProps = {
     name: "Tom",
     age: 8,
 }
-
+// 개발 모드에서만 동작
+// RegExpression으로 사용자 정의 가능
+// 원래 제약없던 children까지 제한 가능
 PropComponent.propTypes = {
     name: PropTypes.string,
     age: function(props, propName, componentName) {

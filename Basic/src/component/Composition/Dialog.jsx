@@ -25,6 +25,7 @@ export default function Dialog(props) {
             color: "white"
         }}  onClick={()=> setIsOpen(false)}
         >{props.button}</button>) : 
+        // 버블링
         (
             <div onClick={()=>setIsOpen(false)}>{props.button}
                 </div>)}
